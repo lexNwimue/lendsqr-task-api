@@ -3,9 +3,8 @@ A NodeJS API mimicking basic banking/financial transactions such as creating an 
 
 <div align="center">
    Solution for a challenge from  <a href="https://lendsqr.com" target="_blank">lendsqr - Backend Engineer Challenge</a>.
+   Hosted at: <a href="https://lendsqr-api-task.herokuapp.com/" target="_blank"> www.lendsqr-api-task.herokuapp.com </a>
 </div>
-
-Hosted at: <a href="https://lendsqr-api-task.herokuapp.com/" target="_blank"> www.lendsqr-api-task.herokuapp.com </a>
 
 <div align="center">
   <h3>
