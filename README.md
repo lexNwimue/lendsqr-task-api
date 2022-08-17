@@ -1,8 +1,6 @@
 # lendsqr-task-api
 A NodeJS API mimicking basic banking/financial transactions such as creating an account, making deposits, withdrawals and transfer etc. 
 
-<h1 align="center">auth-site</h1>
-
 <div align="center">
    Solution for a challenge from  <a href="https://lendsqr.com" target="_blank">lendsqr - Backend Engineer Challenge</a>.
 </div>
