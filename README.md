@@ -82,30 +82,36 @@ The amount field is optional and defaults to 0 if it isn't provided. All other f
 of the provided email in the database and throws an error if such email exists. 
 
 For the /deposit endpoint you can provide the following data
+```javascript
 {
   email: ....
   amount: <Number>
 }
+```
 
 The email provided must exist before the operation can be carried out successfully. And non-negative numerical amounts must be 
 provided, otherwise the system prompts the user to enter a valid amount. 
 
 For the /withdraw endpoint you can provide the following data
+```javascript
 {
   email: ....
   amount: <Number>
 }
+```
 
 Works exactly like the /deposit endpoint and is in fact implemented by the same function, except that the amount is deducated 
 from the user balance. An additional action is that it allows only withdrawals less than the user's current balance, 
 otherwise it responds with an 'Insufficient Funds' message. 
 
 For the /transfer endpoint you can provide the following data
+```javascript
 {
   sender: <sender email>
   receiver: <receiver email>
   amount: <Number>
 }
+```
 
 The emails provided must be valid before the operation can be carried out successfully. On verification of both emails 
 the amount entered is validated and the same checks for deposits and withdrawals are performed, because a transfer is the embodiment
@@ -113,19 +119,10 @@ of a withdrawal action (from the senders account) and a deposit action (to the w
 
 
 For the /account endpoint you can provide the following data
+```javascript
 {
   email: ...
 }
-
+```
 This endpoint returns the complete account details of the email specified if valid, and can be used to confirm if other transactions
 were successful by checking if there is a change in balance
-
-
-
-
-
-
-
-
-
-
