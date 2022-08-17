@@ -15,7 +15,7 @@ A NodeJS API mimicking basic banking/financial transactions such as creating an 
 
 <!-- TABLE OF CONTENTS -->
 
-## Table of Contents
+## Contents
 
 - [Overview](#overview)
 - [Built With](#built-with)
