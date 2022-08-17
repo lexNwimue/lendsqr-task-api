@@ -76,8 +76,14 @@ const transfer = async (req, res) => {
   }
 
   if (sender && receiver) {
-    await User.updateOne({ email: sender }, { $inc: { balance: -amount } }); // Debits sender (-amount)
-    await User.updateOne({ email: receiver }, { $inc: { balance: amount } }); // Credits receiver (+amount);
+    await User.updateOne(
+      { email: sender.email },
+      { $inc: { balance: -amount } }
+    ); // Debits sender (-amount)
+    await User.updateOne(
+      { email: receiver.email },
+      { $inc: { balance: amount } }
+    ); // Credits receiver (+amount);
     return res.json({ success: "Funds transferred successfully." });
   } else {
     return res.json({ failed: "Invalid Details Provided" });
