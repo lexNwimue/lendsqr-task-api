@@ -71,11 +71,11 @@ const transfer = async (req, res) => {
   // Ensure both credentials are correct
   let sender = await verifyAccount(req.body.sender);
   let receiver = await verifyAccount(req.body.receiver);
-  if (sender.balance < amount) {
-    return res.json({ failed: "Insufficient Funds" });
-  }
 
   if (sender && receiver) {
+    if (sender.balance < amount) {
+      return res.json({ failed: "Insufficient Funds" });
+    }
     await User.updateOne(
       { email: sender.email },
       { $inc: { balance: -amount } }
