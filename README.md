@@ -5,6 +5,8 @@ A NodeJS API mimicking basic banking/financial transactions such as creating an 
    Solution for a challenge from  <a href="https://lendsqr.com" target="_blank">lendsqr - Backend Engineer Challenge</a>.
 </div>
 
+Hosted at: <a href="https://lendsqr-api-task.herokuapp.com/" target="_blank"> www.lendsqr-api-task.herokuapp.com </a>
+
 <div align="center">
   <h3>
     <a href="https://www.postman.com/lexnwimue/workspace/my-workspace/collection/21509773-0a6f696e-1fdb-4d09-b146-b8b3294b9e33">
