@@ -1,0 +1,23 @@
+{
+  "name": "lendsqr-task-api",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "An API for basic financial transactions",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "api",
+    "finance",
+    "transaction"
+  ],
+  "author": "Nwimue Progress L.",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2"
+  }
+}
