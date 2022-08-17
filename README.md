@@ -69,11 +69,14 @@ $ npm start
 Each of the endpoints listed above requires x-www-form-urlencoded body data to be provided along with them. The primary key for each document is the
 email field. 
 For the signup endpoint you can provide the following data
+```javascript
 {
   email: ....
   name: ....
   amount: <Number> [Optional]
 }
+```
+
 
 The amount field is optional and defaults to 0 if it isn't provided. All other fields are required. The system checks for the existence 
 of the provided email in the database and throws an error if such email exists. 
