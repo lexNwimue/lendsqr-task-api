@@ -11,11 +11,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Connect to MongoDB and start server aftwards
-const dbURI = "mongodb://localhost/lendsqrDB";
+const dbURI = `mongodb+srv://lexNwimue:${process.env.PASSWORD}@cluster0.bmtc1.mongodb.net/${process.env.DATABASE}?retryWrites=true&w=majority`;
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => {
-    app.listen(process.env.PORT || 4000);
+    app.listen(process.env.PORT || 80);
     console.log("Server ready . . .");
   })
   .catch((err) => console.log(err));
